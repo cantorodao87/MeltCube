@@ -1,21 +1,23 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
-import MenuPrincipal from "./pages/MenuPrincipal";
-import PartidaIndividual from "./pages/PartidaIndividual";
-import PartidaOnline from "./pages/PartidaOnline";
-import MesaDeJuego from "./pages/MesaDeJuego";
-import Estadisticas from "./pages/Estadisticas";
+import Register from "./pages/Register";
+import MainMenu from "./pages/MainMenu";
+import Single from "./pages/Single";
+import Multi from "./pages/Multi";
+import Table from "./pages/Table";
+import Stats from "./pages/Stats";
 
 export default function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/menu" element={<MenuPrincipal />} />
-        <Route path="/individual" element={<PartidaIndividual />} />
-        <Route path="/online" element={<PartidaOnline />} />
-        <Route path="/juego" element={<MesaDeJuego />} />
-        <Route path="/estadisticas" element={<Estadisticas />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/menu" element={<MainMenu />} />
+        <Route path="/single" element={<Single />} />
+        <Route path="/multi" element={<Multi />} />
+        <Route path="/table" element={<Table />} />
+        <Route path="/stats" element={<Stats />} />
       </Routes>
     </BrowserRouter>
   );
