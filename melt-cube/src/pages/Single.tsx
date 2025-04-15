@@ -38,8 +38,7 @@ export default function Single() {
   };
 
   const jugar = () => {
-    // Aquí podrías guardar los jugadores en contexto o localStorage y redirigir al tablero
-    console.log("Jugadores:", jugadores);
+    localStorage.setItem("jugadores", JSON.stringify(jugadores));
     navigate("/table");
   };
 
